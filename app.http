@@ -1,0 +1,165 @@
+
+### users
+GET http://localhost:8000/users
+
+###
+GET http://localhost:8000/users/2
+
+
+###
+PUT http://localhost:8000/user/1
+Content-Type: application/json
+
+{
+    "name": "victornjeru",
+}
+
+###
+DELETE http://localhost:8000/api/users/3
+
+
+
+
+
+
+### users to the category
+GET http://localhost:8000/categories
+
+###
+GET http://localhost:8000/categories/3
+
+###
+PUT http://localhost:8000/categories/1
+Content-Type: application/json
+
+{
+    "name": "cakes",
+}
+
+###
+POST http://localhost:8000/categories
+Content-Type: application/json
+
+{   "id": "4",
+    "name": "benz"
+}
+###
+DELETE http://localhost:8000/categories/4
+
+
+
+
+
+### state changes 
+GET http://localhost:8000/state
+
+###
+GET http://localhost:8000/state/3
+
+###
+PUT http://localhost:8000/state
+Content-Type: application/json
+
+{
+    "name": "Newyork",
+    "code": "345"
+}
+
+###
+POST http://localhost:8000/state
+Content-Type: application/json
+
+{
+    "id": "4",
+    "name": "blackberry",
+    "code": "305"
+}
+
+{ 
+    "id": "3",
+    "name": "youghurt",
+    "code": "130"
+}
+
+
+### 
+DELETE http://localhost:8000/state/2
+
+
+
+
+
+### address changes
+GET http://localhost:8000/address
+
+###
+GET http://localhost:8000/address/1
+
+###
+PUT http://localhost:8000/address/1
+Content-Type: application/json
+
+{
+    "zip_code": "233 New York",
+}
+
+###
+POST http://localhost:8000/address
+Content-Type: application/json
+
+{
+    "id" : "2",
+    "street_address_1": "300",
+    "street_address_2": "400",
+    "zip_code": "15",
+    "delivery_instructions": "Boston",
+    "user_id": 2,
+    "city_id": 2,
+    "created_at" : "2015-3-4",
+    "updated_at": "2019-3-7"
+
+}
+### 
+DELETE http://localhost:8000/address/2
+
+
+
+### city changes
+GET http://localhost:8000/city
+
+###
+GET http://localhost:8000/city/1
+
+###
+PUT http://localhost:8000/city/1
+Content-Type: application/json
+
+{
+    "name": "california",
+    "state_id": "674"
+}
+###
+POST http://localhost:8000/city
+Content-Type: application/json
+
+{   
+    "id": "4", 
+    "name": "antony",
+    "state_id": "4"
+}
+
+### 
+DELETE http://localhost:8000/city/6
+
+
+### comments
+GET http://localhost:8000/comment
+
+###
+GET http://localhost:8000/comment/1
+
+###
+PUT http://localhost:8000/comment
+
+###
+POST http://localhost:8000/comment
